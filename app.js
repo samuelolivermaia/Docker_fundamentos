@@ -4,6 +4,7 @@ const port = 3000;
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
+  console.log(`${new Date().toISOString()}: Chegou request`);
 });
 
 app.listen(port, () => {
